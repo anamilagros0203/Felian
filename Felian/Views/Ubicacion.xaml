@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Felian.Views.Ubicacion"
+             BackgroundColor="White">
+    <ContentPage.Content>
+        <Grid>
+            <!--Texto-->
+            <Label Text="Elige donde recibir tus compras"
+               TextColor="Black"
+               Grid.Row="1"
+               FontAttributes="Bold"
+               FontSize="Large"
+               HorizontalTextAlignment="Center"/>
+
+            <!--Descripcion-->
+            <Label Text=" Podras ver costos y tiempos de entrega&#10; precisos en todo lo que busques"
+                   TextColor="Gray"
+                   Grid.Row="2"
+                   FontSize="Medium"
+                   HorizontalOptions="StartAndExpand"
+                   Margin="10,-80,-0,10"/>
+
+            <!--Mapa-->
+            <Image Source="mapa.jpg"
+                   Grid.Row="3"
+                   Margin="-150,-140,-150,-40"/>
+
+            <!--Boton Aceptar-->
+            <Button Text="Aceptar"
+                     Font="Large"
+                     BorderWidth="1"
+                     HorizontalOptions="Center"
+                     VerticalOptions="CenterAndExpand"
+                    Grid.Row="4"/>
+
+            <!--Imagen-->
+            <Image Source="Negro.png"
+                   Grid.Row="6"
+                   Margin="0,-150,0,0"/>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

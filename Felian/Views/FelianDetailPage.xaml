@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Felian.Views.FelianDetailPage"
+             BackgroundColor="White">
+    <ContentPage.Content>
+        <Grid RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto"
+              VerticalOptions="CenterAndExpand"
+              ColumnDefinitions="*,*"
+              Padding="30,20,30,0">
+            <!--Busqueda-->
+            <SearchBar Grid.Row="0" Grid.Column="0"
+                               Grid.ColumnSpan="3" Placeholder="Busqueda"
+                               BackgroundColor="WhiteSmoke"/>
+
+            <!--Ubicacion-->
+            <Button Text="Enviar a Lima Metropolitana "
+                    TextColor="Black"
+                    BackgroundColor="Transparent"
+                    Grid.Row="2"
+                    Grid.ColumnSpan="3"
+                    FontSize="Small"/>
+
+            <!--Nombre del producto-->
+            <Label  Text="Nombre del producto"
+                    TextColor="Black"
+                    Grid.Row="3"
+                    Grid.ColumnSpan="2"
+                    HorizontalOptions="Center"
+                    FontSize="18"
+                    FontAttributes="Bold"/>
+            <!--Imagen del producto-->
+            <Image Source="mariposa.png"
+                   Grid.Row="4"
+                   Grid.ColumnSpan="3"/>
+            <!--Descripcion-->
+            <Label Text="$56.00"
+                   TextColor="Black"
+                   Grid.Row="5"
+                   FontSize="20"
+                   FontAttributes="Bold"/>
+            <Label Text="Metodos de pago (yape,agora,plin)"
+                   TextColor="Black"
+                   FontSize="18"
+                   Grid.Row="6"
+                   Grid.ColumnSpan="3"/>
+            <Button Text="Seleccionar metodo de pago"
+                    TextColor="Black"
+                    BackgroundColor="Transparent"
+                    Grid.Row="7"
+                    Grid.ColumnSpan="3"
+                    FontSize="13"
+                    FontAttributes="Bold"/>
+            <Label Text="Producto elaborado en empresa Felian&#10;oro amarillo , tamaño 4cm."
+                   TextColor="Black"
+                   Grid.Row="8"
+                   Grid.ColumnSpan="3"
+                   FontSize="18"/>
+
+            <!--Boton para cantidad-->
+            <Button Text="Cantidad: (15 disponibles)"
+                    TextColor="Black"
+                    Font="Large"
+                    BorderWidth="1"
+                    HorizontalOptions="Center"
+                    VerticalOptions="CenterAndExpand"
+                    BackgroundColor="LightGray"
+                    Grid.Row="9"
+                    Grid.ColumnSpan="3"/>
+            <!--Boton de comprar-->
+            <Button Text="           Comprar ahora           "
+                    TextColor="Black"
+                    Font="Large"
+                    BorderWidth="1"
+                    HorizontalOptions="Center"
+                    VerticalOptions="CenterAndExpand"
+                    BackgroundColor="#63A687"
+                    Grid.Row="10"
+                    Grid.ColumnSpan="3"/>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

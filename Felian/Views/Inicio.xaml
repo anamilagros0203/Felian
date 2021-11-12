@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Felian.Views.Inicio"
+             BackgroundColor="White"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <Grid RowDefinitions="Auto,Auto,Auto,Auto,Auto"
+              VerticalOptions="CenterAndExpand"
+              ColumnDefinitions="*,*"
+              Padding="30,20,30,0">
+
+            <!--imagen principal -->
+
+            <Image Grid.Row="3"
+                   Grid.Column="0"
+                   Grid.ColumnSpan="2"
+                   Source="Felian.png"
+                   HeightRequest="350"
+                   Aspect="AspectFill"
+                   VerticalOptions="Start"/>
+
+            <!--Descripcion-->
+            <Label Grid.Row="5"
+                   Grid.Column="0"
+                   Grid.ColumnSpan="2"
+                   Text="Tu joyeria favorita"
+                   Margin="5,20"
+                   HorizontalTextAlignment="Center"
+                   FontSize="20"
+                   TextColor="Black"/>
+
+            <!--Boton circular-->
+            <Button Grid.Row="6"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="2"
+                    ImageSource="WhiteArrow.png"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    BackgroundColor="#63A687"
+                    HeightRequest="100"
+                    WidthRequest="100"
+                    CornerRadius="50"
+                    Clicked="Next_Clicked"/>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

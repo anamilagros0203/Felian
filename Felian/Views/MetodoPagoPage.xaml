@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Felian.Views.MetodoPagoPage"
+             BackgroundColor="White">
+    <ContentPage.Content>
+        <Grid>
+            <!--Texto-->
+            <Label Text="Selecciona metodo de pago"
+                   TextColor="Black"
+                   Grid.Row="1"
+                   Grid.ColumnSpan="3"
+                   FontSize="20"
+                   Margin="20,-350,0,0"/>
+            <!--Metodos-->
+            <Image Source="yape"
+                   Grid.Row="1"
+                   Grid.Column="0"
+                   Margin="10,-800,0,0"/>
+            <Image Source="agora"
+                   Grid.Row="1"
+                   Grid.Column="1"
+                   Margin="10,-800,0,0"/>
+            <Image Source="plin"
+                   Grid.Row="1"
+                   Grid.Column="2"
+                   Margin="10,-800,0,0"/>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
