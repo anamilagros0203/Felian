@@ -1,41 +1,48 @@
 ﻿using Felian.Models;
+using Felian.Services;
+using MvvmHelpers;
+using MvvmHelpers.Commands;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Text;
-using Xamarin.Essentials;
+using System.Threading.Tasks;
 
 namespace Felian.ViewModels
 {
-    public class FelianViewModel
+    public class FelianViewModel : BaseViewModel
     {
-        public ObservableCollection<FelianProducto> felian { get; set; }
+        private DBFirebase1 services;
+
+        public string Name { get; set; }
+        public int Quantity { get; set; }
+
+        public Command SaveFelianProductoCommand { get; set; }
+
+        private ObservableCollection<FelianProducto> felianproducto = new ObservableCollection<FelianProducto>();
+
+        public ObservableCollection<FelianProducto> FelianProductoList
+        {
+            get { return felianproducto; }
+
+            set
+            {
+                felianproducto = value;
+                OnPropertyChanged();
+            }
+        }
 
         public FelianViewModel()
         {
-            felian = new ObservableCollection<FelianProducto>
-            {
-                new FelianProducto
-                {
-                    Name = "Mariposa", Price = "56", Picture ="mariposa.jpeg"
-                },
-                new FelianProducto
-                {
-                    Name = "Tres en uno", Price = "70", Picture ="3en1.jpg"
-                },
-                new FelianProducto
-                {
-                    Name = "Diamantes", Price = "100", Picture ="diamantes.jpg"
-                },
-                new FelianProducto
-                {
-                    Name = "Estrellas", Price = "56", Picture ="estrellas.jpg"
-                },
-                new FelianProducto
-                {
-                    Name = "Perlas", Price = "110", Picture ="perlas.jpeg"
-                },
-            };
+            services = new DBFirebase1();
+            FelianProductoList = services.GetFelianProductoList();
+            SaveFelianProductoCommand = new Command(
+                async () => await SaveFelianProductoAsync(Name, Quantity));
+        }
+
+        public async Task SaveFelianProductoAsync(string name,int quantity)
+        {
+            await services.AddFelianProducto(name, quantity);
         }
     }
 }

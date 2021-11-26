@@ -56,7 +56,8 @@
                     VerticalOptions="CenterAndExpand"
                     BackgroundColor="#63A687"
                     Grid.Row="11"
-                    Grid.ColumnSpan="3"/>
+                    Grid.ColumnSpan="3"
+                    Clicked="Button_Clicked"/>
         </Grid>
     </ContentPage.Content>
 </ContentPage>

@@ -10,15 +10,11 @@ using Xamarin.Forms.Xaml;
 namespace Felian.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Inicio : ContentPage
+    public partial class CategoriaAnillos : ContentPage
     {
-        public Inicio()
+        public CategoriaAnillos()
         {
             InitializeComponent();
-        }
-        private async void Next_Clicked(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new MainPage());
         }
     }
 }

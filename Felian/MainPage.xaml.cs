@@ -1,5 +1,6 @@
 ﻿using Felian.Models;
 using Felian.ViewModels;
+using Felian.Views;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -23,6 +24,15 @@ namespace Felian
             if (users == null)
                 return;
 
+        }
+        private async void Next_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new FelianPage());
+        }
+
+        private async void Button_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Inicio());
         }
     }
 }

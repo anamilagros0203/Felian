@@ -10,7 +10,7 @@ namespace Felian
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new Views.Inicio());
+            MainPage = new  NavigationPage(new Views.Inicio());
         }
 
         protected override void OnStart()

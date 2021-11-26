@@ -2,16 +2,17 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Felian.Views.FelianPage"
-             BackgroundColor="White">
+             BackgroundColor="WhiteSmoke"
+             NavigationPage.TitleIconImageSource="Nombre"
+             Padding="5,0,5,0">
     <ContentPage.Content>
-        <Grid RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto"
-              VerticalOptions="CenterAndExpand"
-              ColumnDefinitions="*,*"
-              Padding="30,20,30,0">
+        <StackLayout>
             <!--Busqueda-->
             <SearchBar Grid.Row="0" Grid.Column="0"
-                               Grid.ColumnSpan="3" Placeholder="Busqueda"
-                               BackgroundColor="WhiteSmoke"/>
+                       Grid.ColumnSpan="3" Placeholder="Busqueda"
+                       BackgroundColor="WhiteSmoke"
+                       Margin="20,20,20,10"/>
+            
 
             <!--Ubicacion-->
             <Button Text="Enviar a Lima Metropolitana "
@@ -19,97 +20,40 @@
                     BackgroundColor="Transparent"
                     Grid.Row="2"
                     Grid.ColumnSpan="3"
-                    FontSize="Small"/>
+                    FontSize="Small"
+                    Clicked="Button_Clicked"/>
+            
+            <!--Historial-->
+            <Button Text="Historial "
+                    TextColor="Black"
+                    BackgroundColor="#63A687"
+                    FontSize="Small"
+                    Clicked="Button_Clicked_1"
+                    Margin="140,10,140,0"/>
 
-            <!--Texto-->
+            <!--Categorias-->
             <Label Text="Collares"
                    TextColor="Black"
                    FontSize="28"
-                   Grid.Row="3"
-                   FontAttributes="Bold"/>
-
-            <!--Producto y descripcion-->
-            <Frame Grid.Row="4"
-                   Margin="10"
-                   BorderColor="Black"
-                   HeightRequest="60"
-                   WidthRequest="60"
-                   IsClippedToBounds="True"
-                   HorizontalOptions="Center"
-                   VerticalOptions="Center">
-                <Image Source="falta.png"
-                       Aspect="AspectFill"
-                       Margin="-20"
-                       HeightRequest="100"
-                       WidthRequest="100" />
-            </Frame>
-            <Label Text="Nombre del producto"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Start"/>
+            <ImageButton Source="bannercollares.jpg"
+                   Clicked="Button_Clicked_2"/>
+            <Label Text="Anillos"
                    TextColor="Black"
-                   Grid.Row="4"
-                   HorizontalTextAlignment="Center"
-                   Grid.Column="2"/>
-
-
-            <Frame Grid.Row="5"
-                   Margin="10"
-                   BorderColor="Black"
-                   HeightRequest="60"
-                   WidthRequest="60"
-                   IsClippedToBounds="True"
-                   HorizontalOptions="Center"
-                   VerticalOptions="Center">
-                <Image Source="falta.png"
-                       Aspect="AspectFill"
-                       Margin="-20"
-                       HeightRequest="100"
-                       WidthRequest="100" />
-            </Frame>
-            <Label Text="Nombre del producto"
+                   FontSize="28"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Start"/>
+            <ImageButton Source="anillos.png"
+                   Clicked="Button_Clicked_3"/>
+            <Label Text="Aretes"
                    TextColor="Black"
-                   Grid.Row="5"
-                   HorizontalTextAlignment="Center"
-                   Grid.Column="2"/>
+                   FontSize="28"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Start"/>
+                <ImageButton Source="aretes.png"
+                             Clicked="Button_Clicked_4"/>
 
-            <Frame Grid.Row="6"
-                   Margin="10"
-                   BorderColor="Black"
-                   HeightRequest="60"
-                   WidthRequest="60"
-                   IsClippedToBounds="True"
-                   HorizontalOptions="Center"
-                   VerticalOptions="Center">
-                <Image Source="falta.png"
-                       Aspect="AspectFill"
-                       Margin="-20"
-                       HeightRequest="100"
-                       WidthRequest="100" />
-            </Frame>
-            <Label Text="Nombre del producto"
-                   TextColor="Black"
-                   Grid.Row="6"
-                   HorizontalTextAlignment="Center"
-                   Grid.Column="2"/>
-
-
-            <Frame Grid.Row="7"
-                   Margin="10"
-                   BorderColor="Black"
-                   HeightRequest="60"
-                   WidthRequest="60"
-                   IsClippedToBounds="True"
-                   HorizontalOptions="Center"
-                   VerticalOptions="Center">
-                <Image Source="falta.png"
-                       Aspect="AspectFill"
-                       Margin="-20"
-                       HeightRequest="100"
-                       WidthRequest="100" />
-            </Frame>
-            <Label Text="Nombre del producto"
-                   TextColor="Black"
-                   Grid.Row="7"
-                   HorizontalTextAlignment="Center"
-                   Grid.Column="2"/>
-        </Grid>
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>

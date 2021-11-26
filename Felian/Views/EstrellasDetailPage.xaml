@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Felian.Views.FelianDetailPage"
-             BackgroundColor="White">
+             x:Class="Felian.Views.EstrellasDetailPage"
+            BackgroundColor="White">
     <ContentPage.Content>
         <StackLayout>
             <!--Ubicacion-->
@@ -15,7 +15,7 @@
                     Clicked="Button_Clicked"/>
 
             <!--Nombre del producto-->
-            <Label  Text="Collar de mariposas"
+            <Label  Text="Collar Estrellas"
                     TextColor="Black"
                     Grid.Row="3"
                     Grid.ColumnSpan="2"
@@ -23,10 +23,10 @@
                     FontSize="18"
                     FontAttributes="Bold"/>
             <!--Imagen del producto-->
-            <Image Source="mariposa.png"
+            <Image Source="estrellas.png"
                    Margin="40,10,40,10"/>
             <!--Descripcion-->
-            <Label Text="$56.00"
+            <Label Text="$50.00"
                    TextColor="Black"
                    Grid.Row="5"
                    FontSize="18"
@@ -44,8 +44,8 @@
                     FontSize="15"
                     FontAttributes="Bold"
                     Clicked="Button_Clicked1"/>
-            
-            <Label Text="Producto elaborado en empresa Felian&#10;oro amarillo , tamaño 4cm."
+
+            <Label Text="Producto elaborado en empresa Felian&#10;oro amarillo , tamaño 4cm , con estrellas."
                    TextColor="Black"
                    Grid.Row="8"
                    Grid.ColumnSpan="3"

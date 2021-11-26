@@ -2,17 +2,18 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Felian.MainPage"
+             BackgroundColor="White"
              NavigationPage.HasNavigationBar="False">
 
     <StackLayout>
-        <Frame BackgroundColor="#63A687" Padding="24" CornerRadius="40" Margin="10,30,10,20">
+        <Frame BackgroundColor="#63A687" Padding="24" CornerRadius="40" Margin="10,30,10,20" BorderColor="Black">
             <Label Text="Felian" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
         </Frame>
 
-        <Entry Text="{Binding FirstName}"  Placeholder="Escribe tu nombre"/>
-        <Entry Text="{Binding Email}" Placeholder="Escribe tu email"/>
-        <Entry Text="{Binding Password}" Placeholder="Escribe tu contraseña"/>
-        <Entry Text="{Binding Address}" Placeholder="Escribe tu direccion"/>
+        <Entry Text="{Binding FirstName}"  Placeholder="Escribe tu nombre"  TextColor="Black" Background="#63A687"/>
+        <Entry Text="{Binding Email}" Placeholder="Escribe tu email" TextColor="Black" Background="#63A687"/>
+        <Entry Text="{Binding Password}" Placeholder="Escribe tu contraseña" TextColor="Black" Background="#63A687"/>
+        <Entry Text="{Binding Address}" Placeholder="Escribe tu direccion" TextColor="Black" Background="#63A687"/>
 
         <Button Text="Registrar" Command="{Binding SaveUsersCommand}" BackgroundColor="#63A687" />
         <ListView ItemsSource="{Binding UserList}"
@@ -21,22 +22,27 @@
                 <DataTemplate>
                     <ViewCell>
                         <StackLayout Orientation="Horizontal">
-                            <Label Text="{Binding FirstName}"/>
-                            <Label Text="{Binding Email}"/>
-                            <Label Text="{Binding Password}" />
-                            <Label Text="{Binding Address}" />
+                            <Label Text="{Binding FirstName}" TextColor="Black"/>
+                            <Label Text="{Binding Email}" TextColor="Black"/>
+                            <Label Text="{Binding Password}" TextColor="Black" />
+                            <Label Text="{Binding Address}" TextColor="Black"/>
                         </StackLayout>
                     </ViewCell>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
+
         <!--Boton volver-->
         <Button Text="Volver"
                     FontSize="Medium"
-                    BackgroundColor="#63A687"/>
+                    BackgroundColor="#63A687"
+                Clicked="Button_Clicked"/>
+        
+        <!--Boton entrar-->
         <Button Text="entrar"
                     FontSize="Medium"
-                    BackgroundColor="#63A687"/>
+                    BackgroundColor="#63A687"
+                Clicked="Next_Clicked"/>
     </StackLayout>
 
 </ContentPage>

@@ -14,17 +14,14 @@
                    Margin="20,-350,0,0"/>
             <!--Metodos-->
             <Image Source="yape"
-                   Grid.Row="1"
-                   Grid.Column="0"
-                   Margin="10,-800,0,0"/>
+                   Grid.Row="0"
+                   Grid.Column="0"/>
             <Image Source="agora"
-                   Grid.Row="1"
-                   Grid.Column="1"
-                   Margin="10,-800,0,0"/>
+                   Grid.Row="0"
+                   Grid.Column="1"/>
             <Image Source="plin"
-                   Grid.Row="1"
-                   Grid.Column="2"
-                   Margin="10,-800,0,0"/>
+                   Grid.Row="0"
+                   Grid.Column="2"/>
         </Grid>
     </ContentPage.Content>
 </ContentPage>

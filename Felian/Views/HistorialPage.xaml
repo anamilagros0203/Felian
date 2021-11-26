@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Felian.Views.HistorialPage"
+             BackgroundColor="White">
+    <ContentPage.Content>
+        <Grid RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto"
+              VerticalOptions="CenterAndExpand"
+              ColumnDefinitions="*,*"
+              Padding="30,0,30,0">
+            <!--Busqueda-->
+            <SearchBar Grid.Row="0" Grid.Column="0"
+                               Grid.ColumnSpan="3" Placeholder="Busqueda"
+                               BackgroundColor="WhiteSmoke"/>
+            <!--Texto-->
+            <Label Text="Tu Historial"
+                   TextColor="Black"
+                   FontSize="28"
+                   Grid.Row="2"
+                   Grid.ColumnSpan="3"
+                   FontAttributes="Bold"/>
+            <Label Text="Esta semana"
+                   TextColor="Black"
+                   FontSize="28"
+                   Grid.Row="3"
+                   Grid.ColumnSpan="3"/>
+
+            <!--Producto y descripcion-->
+            <Frame Grid.Row="5"
+                   Margin="10"
+                   BorderColor="Black"
+                   HeightRequest="60"
+                   WidthRequest="60"
+                   IsClippedToBounds="True"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center">
+                <Image Source="mariposa.png"
+                       Aspect="AspectFill"
+                       Margin="-20"
+                       HeightRequest="100"
+                       WidthRequest="100"/>
+            </Frame>
+            <Label Text="Collar Mariposa 26/11/21"
+                   TextColor="Black"
+                   Grid.Row="5"
+                   HorizontalTextAlignment="Start"
+                   Grid.Column="1"
+                   FontSize="Medium"/>
+
+            <Label Text="Este mes"
+                   TextColor="Black"
+                   FontSize="28"
+                   Grid.Row="6"
+                   Grid.ColumnSpan="3"/>
+
+            <Frame Grid.Row="7"
+                   Margin="10"
+                   BorderColor="Black"
+                   HeightRequest="60"
+                   WidthRequest="60"
+                   IsClippedToBounds="True"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center">
+                <Image Source="diamantes.png"
+                       Aspect="AspectFill"
+                       Margin="-20"
+                       HeightRequest="100"
+                       WidthRequest="100"/>
+            </Frame>
+            <Label Text="Collar Diamante 10/11/21"
+                   TextColor="Black"
+                   Grid.Row="7"
+                   HorizontalTextAlignment="Start"
+                   Grid.Column="1"
+                   FontSize="Medium"/>
+
+            <Frame Grid.Row="8"
+                   Margin="10"
+                   BorderColor="Black"
+                   HeightRequest="60"
+                   WidthRequest="60"
+                   IsClippedToBounds="True"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center">
+                <Image Source="mariposa.png"
+                       Aspect="AspectFill"
+                       Margin="-20"
+                       HeightRequest="100"
+                       WidthRequest="100"/>
+            </Frame>
+            <Label Text="Collar Mariposa 10/11/21"
+                   TextColor="Black"
+                   Grid.Row="8"
+                   HorizontalTextAlignment="Start"
+                   Grid.Column="1"
+                   FontSize="Medium"/>
+
+
+            <Frame Grid.Row="9"
+                   Margin="10"
+                   BorderColor="Black"
+                   HeightRequest="60"
+                   WidthRequest="60"
+                   IsClippedToBounds="True"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center">
+                <Image Source="perlas.png"
+                       Aspect="AspectFill"
+                       Margin="-20"
+                       HeightRequest="100"
+                       WidthRequest="100" />
+            </Frame>
+            <Label Text="Collar Perlado 10/11/21"
+                   TextColor="Black"
+                   Grid.Row="9"
+                   HorizontalTextAlignment="Start"
+                   Grid.Column="1"
+                   FontSize="Medium"/>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
