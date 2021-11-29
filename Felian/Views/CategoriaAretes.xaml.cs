@@ -16,5 +16,24 @@ namespace Felian.Views
         {
             InitializeComponent();
         }
+        private async void ImageButton_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new arete1());
+        }
+
+        private async void ImageButton_Clicked_1(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new arete2());
+        }
+
+        private async void ImageButton_Clicked_2(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new arete3());
+        }
+
+        private async void ImageButton_Clicked_3(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new arete4());
+        }
     }
 }

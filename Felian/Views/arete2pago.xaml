@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Felian.Views.arete2pago"
+              BackgroundColor="White">
+    <ContentPage.Content>
+        <Grid>
+
+            <!--Texto-->
+            <Label Text="Tu compra esta por terminar"
+                   TextColor="Black"
+                   Grid.Row="1"
+                   FontSize="25"
+                   Grid.ColumnSpan="3"/>
+            <Label Text="Nombre del producto"
+                   TextColor="Black"
+                   Grid.Row="2"
+                   Grid.ColumnSpan="3"
+                   FontSize="20"/>
+
+            <!--Imagen del producto-->
+            <Image Source="arete2"
+                   Grid.Row="5"
+                   Grid.ColumnSpan="3"
+                   Margin="0,-150,0,0"/>
+
+            <!--Descripcion de la compra-->
+            <Label Text="Tu compra sera pagada a traves de&#10;Yape"
+                   TextColor="Black"
+                   Grid.Row="6"
+                   Grid.ColumnSpan="3"
+                   FontSize="20"/>
+            <Label Text="Nombre de la vendedora"
+                   TextColor="Black"
+                   Grid.Row="7"
+                   Grid.ColumnSpan="3"
+                   FontSize="20"/>
+            <Label Text="$56.00"
+                   TextColor="Black"
+                   Grid.Row="8"
+                   Grid.ColumnSpan="3"
+                   FontSize="20"/>
+
+            <!--Codigo-->
+            <Image Source="codigo"
+                   Grid.Row="10"
+                   Grid.ColumnSpan="3"
+                   Margin="0,-90,0,0"/>
+
+            <!--Boton Pagar-->
+            <Button Text="           Pagar           "
+                    TextColor="Black"
+                    Font="Large"
+                    BorderWidth="1"
+                    HorizontalOptions="Center"
+                    VerticalOptions="CenterAndExpand"
+                    BackgroundColor="#63A687"
+                    Grid.Row="11"
+                    Grid.ColumnSpan="3"
+                    Clicked="Button_Clicked"/>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

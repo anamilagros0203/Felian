@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Felian.Views.anillo1"
+               BackgroundColor="White">
+    <ContentPage.Content>
+        <StackLayout>
+            <!--Ubicacion-->
+            <Button Text="Enviar a Lima Metropolitana "
+                    TextColor="Black"
+                    BackgroundColor="LightGreen"
+                    Grid.Row="2"
+                    Grid.ColumnSpan="3"
+                    FontSize="Small"
+                    Clicked="Button_Clicked"/>
+
+            <!--Nombre del producto-->
+            <Label  Text="Collar Diamante"
+                    TextColor="Black"
+                    Grid.Row="3"
+                    Grid.ColumnSpan="2"
+                    HorizontalOptions="Center"
+                    FontSize="18"
+                    FontAttributes="Bold"/>
+            <!--Imagen del producto-->
+            <Image Source="anillo1"
+                   Margin="40,10,40,10"/>
+            <!--Descripcion-->
+            <Label Text="$160.00 antes"
+                   TextColor="#63A687"
+                   Grid.Row="5"
+                   FontSize="18"
+                   FontAttributes="Bold"/>
+            <Label Text="$143 AHORA"
+                   TextColor="Black"
+                   Grid.Row="5"
+                   FontSize="18"
+                   FontAttributes="Bold"/>
+            <Label Text="Metodos de pago (yape,agora,plin)"
+                   TextColor="Black"
+                   FontSize="15"
+                   Grid.Row="6"
+                   Grid.ColumnSpan="3"/>
+            <Button Text="Seleccionar metodo de pago"
+                    TextColor="Black"
+                    BackgroundColor="LightGreen"
+                    Grid.Row="7"
+                    Grid.ColumnSpan="3"
+                    FontSize="15"
+                    FontAttributes="Bold"
+                    Clicked="Button_Clicked1"/>
+
+            <Label Text="Producto elaborado en empresa Felian&#10;oro amarillo , tamaño 4cm , con diamantes."
+                   TextColor="Black"
+                   Grid.Row="8"
+                   Grid.ColumnSpan="3"
+                   FontSize="18"/>
+
+            <!--Registro de la cantidad-->
+            <Entry Text="{Binding Name}" Placeholder="NOMBRE DEL PRODUCTO"  BackgroundColor="#63A687"/>
+            <Entry Text="{Binding Quantity}" Placeholder="CANTIDAD" BackgroundColor="#63A687"/>
+
+            <Button Text="COMPRAR" Command="{Binding }" Background="Black" Clicked="Next_Clicked"/>
+            <ListView ItemsSource="{Binding }"
+                      ItemTapped="ListView_OnItemTapped">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="{Binding Name}" TextColor="Black"/>
+                                <Label Text="{Binding Quantity}" TextColor="Black"/>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+
+            </ListView>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

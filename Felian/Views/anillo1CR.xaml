@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Felian.Views.anillo1CR"
+             BackgroundColor="White">
+    <ContentPage.Content>
+        <Grid>
+            <!--Texto-->
+            <Label Text="Compra realizada!"
+                   TextColor="Black"
+                   Grid.Row="1"
+                   FontSize="25"
+                   Grid.ColumnSpan="3"/>
+            <Label Text="Nombre del producto"
+                   TextColor="Black"
+                   Grid.Row="2"
+                   Grid.ColumnSpan="3"
+                   FontSize="20"/>
+
+            <!--Imagen del producto-->
+            <Image Source="anillo1"
+                   Grid.Row="5"
+                   Grid.ColumnSpan="3"
+                   Margin="0,-180,0,0"/>
+
+            <!--Descripcion-->
+            <Label Text="$56.00"
+                   TextColor="Black"
+                   Grid.Row="6"
+                   FontSize="20"/>
+            <Label Text="Pago realizado por:&#10;Nombre del comprador"
+                   TextColor="Black"
+                   Grid.Row="7"
+                   Grid.ColumnSpan="3"
+                   FontSize="20"/>
+
+            <!--Precausiones-->
+            <Label Text="Tomar captura de esta compra"
+                   FontSize="20"
+                   Grid.Row="8"
+                   Grid.ColumnSpan="3"
+                   TextColor="Black"/>
+            <Label Text="El producto estara llegando en dos dias&#10;en todo caso no  llegara en el tiempo&#10;predeterminado ,comunicarse al siguiente&#10;numero , mostrando captura de su pago realizado."
+                   TextColor="Gray"
+                   Grid.Row="9"
+                   Grid.ColumnSpan="3"
+                   Margin="10,-50,0,0"/>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

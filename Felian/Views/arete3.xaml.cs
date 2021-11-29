@@ -12,32 +12,34 @@ using Xamarin.Forms.Xaml;
 namespace Felian.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class DiamanteDetailPage : ContentPage
+    public partial class arete3 : ContentPage
     {
-        public DiamanteDetailPage()
+        public arete3()
         {
             InitializeComponent();
+            BindingContext = new FelianViewModel();
         }
-        //Boton
-        private async void Next_Clicked(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new FelianPagoPage());
-        }
-        private async void Button_Clicked(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new Ubicacion());
-        }
-        private async void Button_Clicked1(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new MetodoPagoPage());
-        }
-
-        //Base de datos producto
+        //Para el registro de la base de datos del producto
         private async void ListView_OnItemTapped(object sender, ItemTappedEventArgs e)
         {
             var felianproducto = e.Item as FelianProducto;
             if (felianproducto == null)
                 return;
+        }
+        //Para que funcine los botones 
+        private async void Next_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new arete3pago());
+        }
+
+        private async void Button_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Ubicacion());
+        }
+
+        private async void Button_Clicked1(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new MetodoPagoPage());
         }
     }
 }
