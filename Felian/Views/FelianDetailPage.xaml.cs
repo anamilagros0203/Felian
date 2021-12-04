@@ -14,6 +14,7 @@ namespace Felian.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class FelianDetailPage : ContentPage
     {
+        //BindingContext para definir enlaces de datos para vincular las propiedades de dos vistas 
         public FelianDetailPage()
         {
             InitializeComponent();

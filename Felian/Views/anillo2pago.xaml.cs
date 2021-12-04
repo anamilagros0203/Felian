@@ -18,6 +18,7 @@ namespace Felian.Views
         }
 
         private async void Button_Clicked(object sender, EventArgs e)
+            //Funcionamiento del boton
         {
             await Navigation.PushAsync(new anillo2CR());
         }

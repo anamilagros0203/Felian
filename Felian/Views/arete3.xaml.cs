@@ -14,6 +14,7 @@ namespace Felian.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class arete3 : ContentPage
     {
+        //BindingContext para definir enlaces de datos para vincular las propiedades de dis vistas 
         public arete3()
         {
             InitializeComponent();

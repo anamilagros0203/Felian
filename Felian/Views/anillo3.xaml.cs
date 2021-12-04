@@ -14,6 +14,7 @@ namespace Felian.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class anillo3 : ContentPage
     {
+        //BindingContext para definir enlaces de datos para vincular las propiedades de dis vistas 
         public anillo3()
         {
             InitializeComponent();

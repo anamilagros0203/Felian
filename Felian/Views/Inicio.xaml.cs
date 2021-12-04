@@ -16,6 +16,7 @@ namespace Felian.Views
         {
             InitializeComponent();
         }
+        //Funcionamiento del boton
         private async void Next_Clicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new login());

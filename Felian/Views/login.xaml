@@ -5,6 +5,7 @@
              BackgroundColor="White"
              NavigationPage.HasNavigationBar="False">
     <ContentPage.Content>
+        <!--Login-->
         <StackLayout>
             <Image Margin="20,190,20,30" Source="Nombre"/>
             <Entry Margin="20,10,20,10" Text="{Binding Email}" Placeholder="Escribe tu email" TextColor="Black" Background="#63A687"/>

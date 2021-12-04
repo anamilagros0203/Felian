@@ -9,7 +9,7 @@ namespace Felian
         public App()
         {
             InitializeComponent();
-
+            //Para poner navegar entre las paginas
             MainPage = new  NavigationPage(new Views.Inicio());
         }
 

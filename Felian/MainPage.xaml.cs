@@ -13,6 +13,7 @@ namespace Felian
 {
     public partial class MainPage : ContentPage
     {
+        //BindingContext para definir enlaces de datos para vincular las propiedades de dos vistas 
         public MainPage()
         {
             InitializeComponent();
@@ -25,6 +26,7 @@ namespace Felian
                 return;
 
         }
+        //Funcionamiento de los botones
         private async void Next_Clicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new FelianPage());
