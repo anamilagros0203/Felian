@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Felian.Views.arete3pago"
-              BackgroundColor="White">
+             x:Class="Felian.Views.Perlaspago"
+               BackgroundColor="White">
     <ContentPage.Content>
         <Grid>
 
@@ -12,14 +12,14 @@
                    Grid.Row="1"
                    FontSize="25"
                    Grid.ColumnSpan="3"/>
-            <Label Text="Aretes Aros"
+            <Label Text="Nombre del producto"
                    TextColor="Black"
                    Grid.Row="2"
                    Grid.ColumnSpan="3"
                    FontSize="20"/>
 
             <!--Imagen del producto-->
-            <Image Source="arete3"
+            <Image Source="perlas"
                    Grid.Row="5"
                    Grid.ColumnSpan="3"
                    Margin="0,-150,0,0"/>
@@ -35,7 +35,7 @@
                    Grid.Row="7"
                    Grid.ColumnSpan="3"
                    FontSize="20"/>
-            <Label Text="$53.00"
+            <Label Text="$56.00"
                    TextColor="Black"
                    Grid.Row="8"
                    Grid.ColumnSpan="3"

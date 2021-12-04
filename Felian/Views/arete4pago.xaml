@@ -12,7 +12,7 @@
                    Grid.Row="1"
                    FontSize="25"
                    Grid.ColumnSpan="3"/>
-            <Label Text="Nombre del producto"
+            <Label Text="Aretes Punta"
                    TextColor="Black"
                    Grid.Row="2"
                    Grid.ColumnSpan="3"
@@ -30,12 +30,12 @@
                    Grid.Row="6"
                    Grid.ColumnSpan="3"
                    FontSize="20"/>
-            <Label Text="Nombre de la vendedora"
+            <Label Text="Vendedora: Ariana Contreras"
                    TextColor="Black"
                    Grid.Row="7"
                    Grid.ColumnSpan="3"
                    FontSize="20"/>
-            <Label Text="$56.00"
+            <Label Text="$43.00"
                    TextColor="Black"
                    Grid.Row="8"
                    Grid.ColumnSpan="3"

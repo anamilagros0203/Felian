@@ -58,7 +58,7 @@
                        WidthRequest="100"
                              Clicked="ImageButton_Clicked_1"/>
             </Frame>
-            <Label Text="Collar Diamante"
+            <Label Text="Anillo Azul"
                    TextColor="Black"
                    Grid.Row="3"
                    HorizontalTextAlignment="Start"
@@ -80,7 +80,7 @@
                        WidthRequest="100"
                              Clicked="ImageButton_Clicked_2"/>
             </Frame>
-            <Label Text="Collar Estrellas"
+            <Label Text="Anillo Hojas"
                    TextColor="Black"
                    Grid.Row="4"
                    HorizontalTextAlignment="Start"
@@ -102,7 +102,7 @@
                        WidthRequest="100"
                              Clicked="ImageButton_Clicked_3"/>
             </Frame>
-            <Label Text="Collar Perlado"
+            <Label Text="Anillo Corona"
                    TextColor="Black"
                    Grid.Row="5"
                    HorizontalTextAlignment="Start"

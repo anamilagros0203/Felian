@@ -32,7 +32,7 @@ namespace Felian
 
         private async void Button_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new Inicio());
+            await Navigation.PushAsync(new login());
         }
     }
 }

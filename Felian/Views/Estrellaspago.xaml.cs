@@ -10,15 +10,15 @@ using Xamarin.Forms.Xaml;
 namespace Felian.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Inicio : ContentPage
+    public partial class Estrellaspago : ContentPage
     {
-        public Inicio()
+        public Estrellaspago()
         {
             InitializeComponent();
         }
-        private async void Next_Clicked(object sender, EventArgs e)
+        private async void Button_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new login());
+            await Navigation.PushAsync(new EstrellasCR());
         }
     }
 }

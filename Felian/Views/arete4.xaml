@@ -15,7 +15,7 @@
                     Clicked="Button_Clicked"/>
 
             <!--Nombre del producto-->
-            <Label  Text="Collar Diamante"
+            <Label  Text="Aretes Punta"
                     TextColor="Black"
                     Grid.Row="3"
                     Grid.ColumnSpan="2"
@@ -26,12 +26,12 @@
             <Image Source="arete4"
                    Margin="40,10,40,10"/>
             <!--Descripcion-->
-            <Label Text="$160.00 antes"
+            <Label Text="$10.00 antes"
                    TextColor="#63A687"
                    Grid.Row="5"
                    FontSize="18"
                    FontAttributes="Bold"/>
-            <Label Text="$143 AHORA"
+            <Label Text="$43 AHORA"
                    TextColor="Black"
                    Grid.Row="5"
                    FontSize="18"

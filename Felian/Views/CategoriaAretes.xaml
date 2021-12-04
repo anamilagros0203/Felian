@@ -36,7 +36,7 @@
                        WidthRequest="100"
                              Clicked="ImageButton_Clicked"/>
             </Frame>
-            <Label Text="Collar Mariposa"
+            <Label Text="Aretes Corazon"
                    TextColor="Black"
                    Grid.Row="2"
                    HorizontalTextAlignment="Start"
@@ -58,7 +58,7 @@
                        WidthRequest="100"
                              Clicked="ImageButton_Clicked_1"/>
             </Frame>
-            <Label Text="Collar Diamante"
+            <Label Text="Aretes Diamante"
                    TextColor="Black"
                    Grid.Row="3"
                    HorizontalTextAlignment="Start"
@@ -80,7 +80,7 @@
                        WidthRequest="100"
                              Clicked="ImageButton_Clicked_2"/>
             </Frame>
-            <Label Text="Collar Estrellas"
+            <Label Text="Aretes  Aros"
                    TextColor="Black"
                    Grid.Row="4"
                    HorizontalTextAlignment="Start"
@@ -102,7 +102,7 @@
                        WidthRequest="100"
                              Clicked="ImageButton_Clicked_3"/>
             </Frame>
-            <Label Text="Collar Perlado"
+            <Label Text="Aretes Punta"
                    TextColor="Black"
                    Grid.Row="5"
                    HorizontalTextAlignment="Start"

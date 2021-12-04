@@ -22,7 +22,7 @@ namespace Felian.Views
         //Boton
         private async void Next_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new FelianPagoPage());
+            await Navigation.PushAsync(new Perlaspago());
         }
         private async void Button_Clicked(object sender, EventArgs e)
         {

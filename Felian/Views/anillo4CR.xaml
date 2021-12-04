@@ -11,7 +11,7 @@
                    Grid.Row="1"
                    FontSize="25"
                    Grid.ColumnSpan="3"/>
-            <Label Text="Nombre del producto"
+            <Label Text="Anillo Corona"
                    TextColor="Black"
                    Grid.Row="2"
                    Grid.ColumnSpan="3"
@@ -24,11 +24,11 @@
                    Margin="0,-180,0,0"/>
 
             <!--Descripcion-->
-            <Label Text="$56.00"
+            <Label Text="$150.00"
                    TextColor="Black"
                    Grid.Row="6"
                    FontSize="20"/>
-            <Label Text="Pago realizado por:&#10;Nombre del comprador"
+            <Label Text="Pago realizado por:&#10;Milagros Chiroque"
                    TextColor="Black"
                    Grid.Row="7"
                    Grid.ColumnSpan="3"

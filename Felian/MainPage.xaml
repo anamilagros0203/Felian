@@ -6,16 +6,14 @@
              NavigationPage.HasNavigationBar="False">
 
     <StackLayout>
-        <Frame BackgroundColor="#63A687" Padding="24" CornerRadius="40" Margin="10,30,10,20" BorderColor="Black">
-            <Label Text="Felian" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
-        </Frame>
+        <Image Margin="20,140,20,30" Source="Nombre"/>
 
-        <Entry Text="{Binding FirstName}"  Placeholder="Escribe tu nombre"  TextColor="Black" Background="#63A687"/>
-        <Entry Text="{Binding Email}" Placeholder="Escribe tu email" TextColor="Black" Background="#63A687"/>
-        <Entry Text="{Binding Password}" Placeholder="Escribe tu contraseña" TextColor="Black" Background="#63A687"/>
-        <Entry Text="{Binding Address}" Placeholder="Escribe tu direccion" TextColor="Black" Background="#63A687"/>
+        <Entry Margin="20,10,20,10" Text="{Binding FirstName}"  Placeholder="Escribe tu nombre"  TextColor="Black" Background="#63A687"/>
+        <Entry Margin="20,10,20,10" Text="{Binding Email}" Placeholder="Escribe tu email" TextColor="Black" Background="#63A687"/>
+        <Entry Margin="20,10,20,10" Text="{Binding Password}" Placeholder="Escribe tu contraseña" TextColor="Black" Background="#63A687"/>
+        <Entry Margin="20,10,20,10" Text="{Binding Address}" Placeholder="Escribe tu direccion" TextColor="Black" Background="#63A687"/>
 
-        <Button Text="Registrar" Command="{Binding SaveUsersCommand}" BackgroundColor="#63A687" />
+        <Button Margin="20,10,20,10" Text="Registrar" Command="{Binding SaveUsersCommand}" BackgroundColor="Black" />
         <ListView ItemsSource="{Binding UserList}"
                   ItemTapped="ListView_OnItemTapped">
             <ListView.ItemTemplate>
@@ -35,13 +33,13 @@
         <!--Boton volver-->
         <Button Text="Volver"
                     FontSize="Medium"
-                    BackgroundColor="#63A687"
+                    BackgroundColor="Black"
                 Clicked="Button_Clicked"/>
         
         <!--Boton entrar-->
         <Button Text="entrar"
                     FontSize="Medium"
-                    BackgroundColor="#63A687"
+                    BackgroundColor="Black"
                 Clicked="Next_Clicked"/>
     </StackLayout>
 

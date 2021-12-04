@@ -15,7 +15,7 @@
                     Clicked="Button_Clicked"/>
 
             <!--Nombre del producto-->
-            <Label  Text="Collar Diamante"
+            <Label  Text="Anillo Corona"
                     TextColor="Black"
                     Grid.Row="3"
                     Grid.ColumnSpan="2"
@@ -31,7 +31,7 @@
                    Grid.Row="5"
                    FontSize="18"
                    FontAttributes="Bold"/>
-            <Label Text="$143 AHORA"
+            <Label Text="$150 AHORA"
                    TextColor="Black"
                    Grid.Row="5"
                    FontSize="18"

@@ -15,7 +15,7 @@
                     Clicked="Button_Clicked"/>
 
             <!--Nombre del producto-->
-            <Label  Text="Collar Diamante"
+            <Label  Text="Anillo Diamante"
                     TextColor="Black"
                     Grid.Row="3"
                     Grid.ColumnSpan="2"

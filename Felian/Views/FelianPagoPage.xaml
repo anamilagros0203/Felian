@@ -30,7 +30,7 @@
                    Grid.Row="6"
                    Grid.ColumnSpan="3"
                    FontSize="20"/>
-            <Label Text="Nombre de la vendedora"
+            <Label Text="Vendedora: Ariana Contreras"
                    TextColor="Black"
                    Grid.Row="7"
                    Grid.ColumnSpan="3"
