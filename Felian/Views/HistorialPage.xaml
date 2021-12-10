@@ -37,7 +37,7 @@
                        HeightRequest="100"
                        WidthRequest="100"/>
             </Frame>
-            <Label Text="Aretes corazon 10/12/21 2 Unidades"
+            <Label Text="Aretes corazon 10/12/21   2 Unidades"
                    TextColor="Black"
                    Grid.Row="5"
                    HorizontalTextAlignment="Start"
@@ -58,7 +58,7 @@
                        HeightRequest="100"
                        WidthRequest="100"/>
             </Frame>
-            <Label Text="Arete azul 10/12/21 1 Unidad"
+            <Label Text="Arete azul 10/12/21   1 Unidad"
                    TextColor="Black"
                    Grid.Row="6"
                    HorizontalTextAlignment="Start"
@@ -79,7 +79,7 @@
                        HeightRequest="100"
                        WidthRequest="100"/>
             </Frame>
-            <Label Text="Collar diamantes 10/12/21 2 Unidades"
+            <Label Text="Collar diamantes 10/12/21   2 Unidades"
                    TextColor="Black"
                    Grid.Row="7"
                    HorizontalTextAlignment="Start"
@@ -91,7 +91,6 @@
                    FontSize="28"
                    Grid.Row="8"
                    Grid.ColumnSpan="3"/>
-
 
             <Frame Grid.Row="9"
                    Margin="10"
@@ -107,7 +106,7 @@
                        HeightRequest="100"
                        WidthRequest="100" />
             </Frame>
-            <Label Text="Collar Perlado 02/12/21 1 unidad"
+            <Label Text="Collar Perlado 02/12/21   1 unidad"
                    TextColor="Black"
                    Grid.Row="9"
                    HorizontalTextAlignment="Start"
