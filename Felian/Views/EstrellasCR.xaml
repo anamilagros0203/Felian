@@ -6,7 +6,7 @@
     <ContentPage.Content>
         <Grid>
             <!--Texto-->
-            <Label Text="Compra realizada!"
+            <Label Text="Collar mariposa"
                    TextColor="Black"
                    Grid.Row="1"
                    FontSize="25"

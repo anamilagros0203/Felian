@@ -24,7 +24,7 @@
                    Margin="0,-180,0,0"/>
 
             <!--Descripcion-->
-            <Label Text="$43.00"
+            <Label Text="$86.00"
                    TextColor="Black"
                    Grid.Row="6"
                    FontSize="20"/>

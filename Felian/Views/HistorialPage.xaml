@@ -8,10 +8,7 @@
               VerticalOptions="CenterAndExpand"
               ColumnDefinitions="*,*"
               Padding="30,0,30,0">
-            <!--Busqueda-->
-            <SearchBar Grid.Row="0" Grid.Column="0"
-                               Grid.ColumnSpan="3" Placeholder="Busqueda"
-                               BackgroundColor="WhiteSmoke"/>
+           
             <!--Texto-->
             <Label Text="Tu Historial"
                    TextColor="Black"
@@ -34,24 +31,39 @@
                    IsClippedToBounds="True"
                    HorizontalOptions="Center"
                    VerticalOptions="Center">
-                <Image Source="mariposa.png"
+                <Image Source="arete1.png"
                        Aspect="AspectFill"
                        Margin="-20"
                        HeightRequest="100"
                        WidthRequest="100"/>
             </Frame>
-            <Label Text="Collar Mariposa 26/11/21"
+            <Label Text="Aretes corazon 10/12/21 2 Unidades"
                    TextColor="Black"
                    Grid.Row="5"
                    HorizontalTextAlignment="Start"
                    Grid.Column="1"
                    FontSize="Medium"/>
 
-            <Label Text="Este mes"
+            <Frame Grid.Row="6"
+                   Margin="10"
+                   BorderColor="Black"
+                   HeightRequest="60"
+                   WidthRequest="60"
+                   IsClippedToBounds="True"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center">
+                <Image Source="Arete2.png"
+                       Aspect="AspectFill"
+                       Margin="-20"
+                       HeightRequest="100"
+                       WidthRequest="100"/>
+            </Frame>
+            <Label Text="Arete azul 10/12/21 1 Unidad"
                    TextColor="Black"
-                   FontSize="28"
                    Grid.Row="6"
-                   Grid.ColumnSpan="3"/>
+                   HorizontalTextAlignment="Start"
+                   Grid.Column="1"
+                   FontSize="Medium"/>
 
             <Frame Grid.Row="7"
                    Margin="10"
@@ -67,33 +79,18 @@
                        HeightRequest="100"
                        WidthRequest="100"/>
             </Frame>
-            <Label Text="Collar Diamante 10/11/21"
+            <Label Text="Collar diamantes 10/12/21 2 Unidades"
                    TextColor="Black"
                    Grid.Row="7"
                    HorizontalTextAlignment="Start"
                    Grid.Column="1"
                    FontSize="Medium"/>
 
-            <Frame Grid.Row="8"
-                   Margin="10"
-                   BorderColor="Black"
-                   HeightRequest="60"
-                   WidthRequest="60"
-                   IsClippedToBounds="True"
-                   HorizontalOptions="Center"
-                   VerticalOptions="Center">
-                <Image Source="mariposa.png"
-                       Aspect="AspectFill"
-                       Margin="-20"
-                       HeightRequest="100"
-                       WidthRequest="100"/>
-            </Frame>
-            <Label Text="Collar Mariposa 10/11/21"
+            <Label Text="Este mes"
                    TextColor="Black"
+                   FontSize="28"
                    Grid.Row="8"
-                   HorizontalTextAlignment="Start"
-                   Grid.Column="1"
-                   FontSize="Medium"/>
+                   Grid.ColumnSpan="3"/>
 
 
             <Frame Grid.Row="9"
@@ -110,7 +107,7 @@
                        HeightRequest="100"
                        WidthRequest="100" />
             </Frame>
-            <Label Text="Collar Perlado 10/11/21"
+            <Label Text="Collar Perlado 02/12/21 1 unidad"
                    TextColor="Black"
                    Grid.Row="9"
                    HorizontalTextAlignment="Start"

@@ -12,7 +12,7 @@
                    Grid.Row="1"
                    FontSize="25"
                    Grid.ColumnSpan="3"/>
-            <Label Text="Nombre del producto"
+            <Label Text="Collar mariposa"
                    TextColor="Black"
                    Grid.Row="2"
                    Grid.ColumnSpan="3"

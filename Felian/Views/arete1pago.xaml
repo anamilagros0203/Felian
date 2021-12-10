@@ -35,7 +35,7 @@
                    Grid.Row="7"
                    Grid.ColumnSpan="3"
                    FontSize="20"/>
-            <Label Text="$43.00"
+            <Label Text="$86.00"
                    TextColor="Black"
                    Grid.Row="8"
                    Grid.ColumnSpan="3"

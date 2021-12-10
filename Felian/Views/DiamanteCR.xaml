@@ -11,7 +11,7 @@
                    Grid.Row="1"
                    FontSize="25"
                    Grid.ColumnSpan="3"/>
-            <Label Text="Nombre del producto"
+            <Label Text="Collar diamante"
                    TextColor="Black"
                    Grid.Row="2"
                    Grid.ColumnSpan="3"
@@ -24,7 +24,7 @@
                    Margin="0,-180,0,0"/>
 
             <!--Descripcion-->
-            <Label Text="$56.00"
+            <Label Text="$286.00"
                    TextColor="Black"
                    Grid.Row="6"
                    FontSize="20"/>

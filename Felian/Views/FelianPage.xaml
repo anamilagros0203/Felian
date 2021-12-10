@@ -7,12 +7,6 @@
              Padding="5,0,5,0">
     <ContentPage.Content>
         <StackLayout>
-            <!--Busqueda-->
-            <SearchBar Grid.Row="0" Grid.Column="0"
-                       Grid.ColumnSpan="3" Placeholder="Busqueda"
-                       BackgroundColor="WhiteSmoke"
-                       Margin="20,20,20,10"/>
-            
 
             <!--Ubicacion-->
             <Button Text="Enviar a Lima Metropolitana "
